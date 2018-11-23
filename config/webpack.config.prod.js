@@ -433,6 +433,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
+      chunks: ['index'], 
+      filename: 'index.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -449,6 +451,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.newtabHtml,
+      chunks: ['newtab'], filename: 'newtab.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -465,6 +468,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.popupHtml,
+      chunks: ['popup'], filename: 'popup.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
